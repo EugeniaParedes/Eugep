@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<title>Disqueria online</title>
+		<script type="text/javascript" src="/jquery-3.2.1(1).js"></script>
+		<script type="text/javascript" src="/bootstrap.bundle.js"></script>
+		<link rel="stylesheet" type="text/css" href="/bootstrap.css"></link>
+		<link rel="stylesheet" type="text/css" href="/estilos.css"></link>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-5">
+						<h1> Tienda de Discos </h1>
+						<p align ="center"> Amor por los discos </p>
+					</div>
+					<div class="col-1">
+					</div>
+					<div class="col-6">
+						<img src="/disco1.jpg" width="500px"></img>
+					</div>
+				</div>
+			</div>
+			<ul class="nav nav-tabs">
+			  <li class="nav-item">
+			    <a class="nav-link" th:classappend="${claseHome}" href="/">Home</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="/sabores">Sabores</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="/sucursales">Sucursales</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="/nosotros">Nosotros</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="/contacto">Contacto</a>
+			  </li>
+			</ul>
+			<div class="row">
+				<div class="col-2">
+					<ul>
+					  <li class="nav-item">
+					    <a class="nav-link active" href="/">Home</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="/sabores">Sabores</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="/sucursales">Sucursales</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="/nosotros">Nosotros</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="/contacto">Contacto</a>
+					  </li>
+					</ul>
+				</div>
+				<div class="col-10 este" layout:fragment="contenido">
+					<p>Nuestros Helados</p> <!-- todo esto podria borrarse porque va a ser reemplazado por el server -->
+					<img src="/hela.jpg"></img>
+				</div>
+			</div>
+			<footer>
+			<div class="row">
+				<div class="col-5"></div>
+				<div class="col-2">
+				</div>
+				<div class="col-5"></div>
+			</div>
+			</footer>
+		</div>
+	</body>
+
+
+</html>

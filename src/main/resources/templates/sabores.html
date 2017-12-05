@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+
+	<div class="col-9 este" layout:fragment="contenido">
+		<div class="row">
+			<div class="item-sabor col-6" th:each="sabor : ${listaSabores}">
+				<a href="#" th:text="${sabor.nombre}">Vainilla</a>
+			</div>
+		</div>
+				
+	</div>	
+</html>
+
+
+
+
+
+
+
+
+		<!--  >span class="item-sabor" th:each="sabor : ${listaSabores}">
+			<a href="" th:text="${sabor.nombre}"></a>
+		</span -->
+
+
+
+
+
+
+
+<!--   >ul>
+			<li th:each="sabor : ${listaSabores}"> 
+				<label>Nombre: </label> <p th:text="${sabor.nombre}"></p>
+				<label>Descripcion: </label> <p th:text="${sabor.descripcion}"></p>
+				<label>Tipo: </label> <p th:text="${sabor.tipo}"></p>
+				<label>Stock: </label> <p th:text="${sabor.stock}"></p>
+				<label>Apto Celiacos: </label> <p th:text="${sabor.apto_celiacos}"></p>
+			</li>
+		</ul -->
